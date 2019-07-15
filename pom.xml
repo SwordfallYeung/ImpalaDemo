@@ -8,7 +8,44 @@
     <artifactId>test</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <jar.local.path>D:\IDEA\ImpalaTest\lib</jar.local.path>
+    </properties>
+
     <dependencies>
+
+        <!--<dependency>
+            <groupId>com.cloudera.impala.jdbc</groupId>
+            <artifactId>hive_metastore</artifactId>
+            <scope>system</scope>
+            <systemPath>${jar.local.path}/hive_metastore.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.cloudera.impala.jdbc</groupId>
+            <artifactId>hive_service</artifactId>
+            <scope>system</scope>
+            <systemPath>${jar.local.path}/hive_service.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.cloudera.impala.jdbc</groupId>
+            <artifactId>ImpalaJDBC41</artifactId>
+            <scope>system</scope>
+            <systemPath>${jar.local.path}/ImpalaJDBC41.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.cloudera.impala.jdbc</groupId>
+            <artifactId>ql</artifactId>
+            <scope>system</scope>
+            <systemPath>${jar.local.path}/ql.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.cloudera.impala.jdbc</groupId>
+            <artifactId>TCLIServiceClient</artifactId>
+            <scope>system</scope>
+            <systemPath>${jar.local.path}/TCLIServiceClient.jar</systemPath>
+        </dependency>-->
+
         <dependency>
             <groupId>com.cloudera.impala.jdbc</groupId>
             <artifactId>hive_metastore</artifactId>
@@ -29,6 +66,8 @@
             <artifactId>TCLIServiceClient</artifactId>
             <version>1.0.0</version>
         </dependency>
+
+        <!-- End of dependencies provided by your local repo -->
         <dependency>
             <groupId>commons-dbutils</groupId>
             <artifactId>commons-dbutils</artifactId>
@@ -44,28 +83,29 @@
             <artifactId>libthrift</artifactId>
             <version>0.9.0</version>
         </dependency>
-        <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.14</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.5.11</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-            <version>1.5.11</version>
-        </dependency>
-        <!--c3p0连接池-->
-        <dependency>
-            <groupId>com.mchange</groupId>
-            <artifactId>c3p0</artifactId>
-            <version>0.9.5.2</version>
-        </dependency>
+         <dependency>
+             <groupId>log4j</groupId>
+             <artifactId>log4j</artifactId>
+             <version>1.2.14</version>
+         </dependency>
+         <dependency>
+             <groupId>org.slf4j</groupId>
+             <artifactId>slf4j-api</artifactId>
+             <version>1.5.11</version>
+         </dependency>
+         <dependency>
+             <groupId>org.slf4j</groupId>
+             <artifactId>slf4j-log4j12</artifactId>
+             <version>1.5.11</version>
+         </dependency>
+        <!--C3P0连接池-->
+         <dependency>
+             <groupId>com.mchange</groupId>
+             <artifactId>c3p0</artifactId>
+             <version>0.9.5.2</version>
+         </dependency>
     </dependencies>
+
     <build>
         <plugins>
             <plugin>
