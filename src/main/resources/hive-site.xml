@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+        <property>
+                <name>javax.jdo.option.ConnectionURL</name>
+                <value>jdbc:mysql://192.168.31.249:3306/hive</value>
+        </property>
+        <property>
+                <name>javax.jdo.option.ConnectionDriverName</name>
+                <value>com.mysql.jdbc.Driver</value>
+        </property>
+        <property>
+                <name>javax.jdo.option.ConnectionUserName</name>
+                <value>root</value>
+        </property>
+        <property>
+                <name>javax.jdo.option.ConnectionPassword</name>
+                <value>123456</value>
+        </property>
+        <property>
+                <name>hive.metastore.schema.verification</name>
+                <value>false</value>
+        </property>
+        <property>
+                <name>system:java.io.tmpdir</name>
+                <value>/opt/hadoop/app/apache-hive-2.3.5-bin/tmp</value>
+        </property>
+        <property>
+                <name>system:user.name</name>
+                <value>hive_user</value>
+        </property>
+</configuration>
